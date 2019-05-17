@@ -1,0 +1,12 @@
+version: '3'
+services:
+  nuxt:
+    build:
+      context: .
+    container_name: nuxt-app
+    ports:
+      - 3000:3000
+    volumes:
+      - ..:/workspace:delegated
+    # Overrides default command so things don't shut down after the process ends - useful for debugging
+    command: sleep infinity

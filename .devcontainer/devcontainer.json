@@ -1,0 +1,15 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{
+  "name": "nuxt",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "nuxt",
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "yarn install",
+  "shutdownAction": "stopCompose",
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "octref.vetur",
+    "dariofuzinato.vue-peek",
+    "editorconfig.editorconfig-vscode"
+  ]
+}
